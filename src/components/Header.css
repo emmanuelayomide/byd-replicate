@@ -1,0 +1,154 @@
+:root{
+--fonts1:"Montserrat", sans-serif; 
+--fonts2:"Lato", sans-serif;
+}
+
+
+.personal{
+  text-decoration: none;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 1000;
+  font-family: var(--fonts1);
+}
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.logo-img {
+  height: 20px;
+  width: auto;
+}
+.menu {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+  font-weight: 500;
+  color: #333;
+}
+.menu li {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.menu li:hover {
+  color: #000;
+}
+.chat-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.chat-btn:hover {
+  background: #111;
+}
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  max-width: 280px;
+  height: 100%;
+  background: #fff;
+  padding: 20px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+}
+.mobile-menu.open {
+  transform: translateX(0);
+}
+.mobile-menu-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+.close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.mobile-menu-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-size: 18px;
+  color: #333;
+
+ 
+}
+.mobile-menu-list li {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.mobile-menu-list li:hover {
+  color: #000;
+}
+.mobile-chat-btn {
+  margin-top: auto;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.2s;
+  margin-top: 50px;
+}
+.mobile-chat-btn:hover {
+  background: #111;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  z-index: 1500;
+}
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .chat-btn {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
