@@ -43,7 +43,7 @@ import Logo from '../assets/logo.jpg';
           <li onClick={() => setOpen(false)}>Review</li>
           <li onClick={() => setOpen(false)}>Contact Us</li>
         </ul>
-        <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+        <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className='personal'>
           <button className="mobile-chat-btn">
             <MessageCircle size={20} /> Chat With Us
           </button>

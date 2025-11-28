@@ -73,7 +73,7 @@ const Home = () => {
     infinite: true,
     autoplay: true,
     speed: 800,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
@@ -114,7 +114,7 @@ const Home = () => {
         <h3>{car.name}</h3>
         <p className="price">{car.price}</p>
         <p className="specs">{car.transmission} • {car.mileage}</p>
-        <a href={car.whatsapp} target="_blank">
+        <a href={car.whatsappLink} target="_blank">
           <button>{car.reach}</button>
         </a>
       </div>
